@@ -1,0 +1,15 @@
+{
+  "name": "not-to-do-list-api",
+  "version": "1.0.0",
+  "description": "This is a api for our react  not to do lisy",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sunil kunwar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
