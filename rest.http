@@ -1,0 +1,18 @@
+
+### Task GET API
+
+GET http://localhost:8000/api/v1/task
+
+### Task POST API
+
+POST  http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+    "task":"watchin netflix",
+    "hr":12
+}
+
+### Task DELETE API
+
+DELETE  http://localhost:8000/api/v1/task
