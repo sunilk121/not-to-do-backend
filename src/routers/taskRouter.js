@@ -1,4 +1,5 @@
 import express from "express";
+import { insertTask } from "../models/task/TaskList.model.js";
 const router = express.Router();
 
 const faketask = [];
@@ -17,7 +18,8 @@ router.get("/", (req, res) => {
 router.post("/", (req, res) => {
   //receving data
   faketask.push(req.body);
-  console.log(req.body);
+
+  const result = insertTask(req.body);
   res.json({
     message: "you made a POST call",
   });
