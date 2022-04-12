@@ -4,7 +4,7 @@ const router = express.Router();
 const faketask = [];
 
 //task api endpoints
-router.get("/api/v1/task", (req, res) => {
+router.get("/", (req, res) => {
   //Replace the faketask with the real ones from database
 
   res.json({
@@ -14,7 +14,7 @@ router.get("/api/v1/task", (req, res) => {
   });
 });
 
-router.post("/api/v1/task", (req, res) => {
+router.post("/", (req, res) => {
   //receving data
   faketask.push(req.body);
   console.log(req.body);
@@ -23,7 +23,7 @@ router.post("/api/v1/task", (req, res) => {
   });
 });
 
-router.delete("/api/v1/task", (req, res) => {
+router.delete("/", (req, res) => {
   res.json({
     message: "you made a DELETE call",
   });
